@@ -183,7 +183,7 @@ html{
   margin: 20px 0px 20px 20px
 }
 .about__list li::before {
-  background:url("/image/icons/about.png") center no-repeat;
+  background:url("../image/icons/about.png") center no-repeat;
   content: "";
   width: 20px;
   height: 25px;
@@ -199,7 +199,7 @@ html{
   margin:10px 0px 20px 20px
 }
 .skill_list li::before{
-  background:url("/image/icons/skill.png") center no-repeat;
+  background:url("../image/icons/skill.png") center no-repeat;
   content: "";
   position: relative;
   top:15px;
@@ -222,7 +222,7 @@ html{
   margin: 20px 0px 20px 20px
 }
 .education__list li::before {
-  background:url("/image/icons/education.png") center no-repeat;
+  background:url("../image/icons/education.png") center no-repeat;
   content: "";
   width: 20px;
   height: 20px;
@@ -238,7 +238,7 @@ html{
   margin:10px 0px 20px 20px
 }
 .languages__list li::before{
-  background:url("/image/icons/language.png") center no-repeat;
+  background:url("../image/icons/language.png") center no-repeat;
   content: "";
   position: relative;
   top:15px;
@@ -268,7 +268,7 @@ html{
 .rss {
   width: 121px;
   height: 45px;
-  background-image: url("/image/icons/rs_school_js.svg");
+  background-image: url("../image/icons/rs_school_js.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
