@@ -1,12 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
 </head>
+
 <body>
-    
+    <div class="wraper">
+        <header class="header__top">
+            <div class="container header__container">
+                <nav class="nav__header">
+                    <ul class="nav__list">
+                        <li class="nav__list__item"><a href="#contacts" class="nav__link">Contacts</a></li>
+                        <li class="nav__list__item"><a href="#about" class="nav__link">About me</a></li>
+                        <li class="nav__list__item"><a href="#skill" class="nav__link">Skills</a></li>
+                        <li class="nav__list__item"><a href="#code" class="nav__link">Code</a></li>
+                        <li class="nav__list__item"><a href="#education" class="nav__link">Experience</a></li>
+                        <li class="nav__list__item"><a href="#languages" class="nav__link">Languages</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="header__bottom">
+            <div class="container header__bottom">
+                <div class="header__profile">
+                    <div class="header__profile__image">
+                        <img src="./image/img/I'm.jpg" alt="I'm">
+                    </div>
+                    <div class="header__profile__title">
+                        <div class="header__profile__top__title">Sergey Barzakouski</div>
+                        <div class="header__profile__sub__title">«The more you work the more you know», that's my moto.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="main">
+            <div class="container main__container">
+                <section class="section" id="contacts">
+                    <h2 class="section__title">Contacts</h2>
+                    <ul class="section__list">
+                        <li class="section__link">Discord: Izvra4ok</li>
+                        <li class="section__link">GitHub: <a target="_blank" id="contacts__link" href="https://github.com/Izvra4ok">Izvra4ok</a></li>
+                        <li class="section__link">E-mail: <a target="_blank" id="contacts__link" href="mailto:barzakouski.sergey@gmail.com">barzakouski.sergey@gmail.com</a></li>
+                        <li class="section__link">Tel.:<a id="contacts__link" href="tel:+375298877721"> +375298877721</a></a></li>
+                        <li class="section__link">Instagram: <a target="_blank" id="contacts__link" href="https://www.instagram.com/barzakouski.sergey/">barzakouski.sergey</a></li>
+                        <li class="section__link">VKontakte: <a target="_blank" id="contacts__link" href="https://vk.com/s.barzakovski">s.barzakovski</a></li>
+
+                    </ul>
+                </section>
+                <section class="section" id="About">
+                    <h2 class="section__title">About myself</h2>
+                    <p class="about__text">My name is Sergey. I live in Grodno, Republic of Belarus and 31 years old. I'm married and I have
+                        a beautiful daughter. Every day I do a lot of phyzical excercises: pussh-up,pull-up,jogging. I
+                        spend my free time for the computer or I study English twice of week with my teacher. I want to learn Front-end Development and work as
+                        Developer.</p>
+                    <ul class="about__list">My core strengths:
+                        <li>Quick learner</li>
+                        <li>Diligence</li>
+                        <li>Sociability</li>
+                        <li>Honesty</li>
+                    </ul>
+                </section>
+                <section class="section" id="skill">
+                    <h2 class="section__title">My skills</h2>
+                    <ul class="skill_list">
+                        <li>JavaScript (basic)</li>
+                        <li>Python (basic)</li>
+                        <li>HTML</li>
+                        <li>Editors: VSCode, PyCharm</li>
+                    </ul>
+                </section>
+                <section class="section" id="code">
+                    <h2 class="section__title">Code</h2>
+                    <pre class="pre">
+<code>const sequenceSum = (begin, end) => {
+    if (begin === end){
+        return begin;
+    } else if (begin > end){
+        return NaN;
+    } else {
+        return begin + sequenceSum(begin+1,end);
+        }
+    };
+</code>
+                </section>
+                <section class="section" id="education">
+                    <h2 class="section__title">Education&Experience</h2>
+                    <p class="education__text">Work experience - nothing yet...</p>
+                    <ul class="education__list">I learned some courses:
+                        <li><a href="https://stepik.org/course/2223/info" class="education__link"></a>JS</li>
+                        <li><a href="https://stepik.org/course/52164/info" class="education__link"></a>HTML&CSS</li>
+                        <li><a href="https://stepik.org/course/13929/info" class="education__link"></a>JS:Hexlet</li>
+                        <li><a href="https://stepik.org/course/58852/info" class="education__link"></a>Python</li>
+                    </ul>
+                </section>
+                <section class="section" id="languages">
+                    <h2 class="section__title">Languages</h2>
+                    <ul class="languages__list">
+                        <li>Russian:native speaker</li>
+                        <li>English:A2 Level</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container footer-container">
+              <div>© 2022 <a href="https://rs.school/js/" target="_blank" class="rss">RS</a></div>
+                  <a target="_blank" href="https://github.com/Izvra4ok" class="github nav-link">Izvra4ok</a>
+            </div>
+          </footer>
+    </div>
+
 </body>
+
 </html>
