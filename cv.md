@@ -55,6 +55,4 @@ I studied in Yanka Kupala State University of Grodno, faculty: Law (2018)
 * Russian: Native speaker
 * English: A2 level (I study English twice of week with my teacher)
 
-
-
 ### Never back down my friend
