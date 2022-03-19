@@ -25,21 +25,15 @@
                 </nav>
             </div>
         </header>
-        <div class="header__bottom">
-            <div class="container header__bottom">
-                <div class="header__profile">
-                    <div class="header__profile__image">
-                        <img src="./image/jpeg/I'm.jpg" alt="I'm">
-                    </div>
-                    <div class="header__profile__title">
-                        <div class="header__profile__top__title">Sergey Barzakouski</div>
-                        <div class="header__profile__sub__title">«The more you work the more you know», that's my moto.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <main class="main">
             <div class="container main__container">
+                <section class="section section__profile" id="profile">
+                    <img src="./image/jpeg/I'm.jpg" alt="" class="section__profile__logo">
+                    <div class="section__profile__title">
+                      <h1 class="section__top__title">Barzakouski Sergey</h1>
+                      <h3 class="section__subtitle">«The more you work the more you know», that's my moto.</h3>
+                    </div>        
+                  </section>
                 <section class="section" id="contacts">
                     <h2 class="section__title">Contacts</h2>
                     <ul class="section__list">
@@ -86,16 +80,16 @@
         return begin + sequenceSum(begin+1,end);
         }
     };
-</code>
+</code></pre>
                 </section>
                 <section class="section" id="education">
                     <h2 class="section__title">Education&Experience</h2>
                     <p class="education__text">Work experience - nothing yet...</p>
-                    <ul class="education__list">I learned some courses:
-                        <li><a href="https://stepik.org/course/2223/info" class="education__link"></a>JS</li>
-                        <li><a href="https://stepik.org/course/52164/info" class="education__link"></a>HTML&CSS</li>
-                        <li><a href="https://stepik.org/course/13929/info" class="education__link"></a>JS:Hexlet</li>
-                        <li><a href="https://stepik.org/course/58852/info" class="education__link"></a>Python</li>
+                    <ul class="education__list"><span>I learned some courses:</span>
+                        <li><a href="https://stepik.org/course/2223/info" class="education__link">Javascript</a></li>
+                        <li><a href="https://stepik.org/course/52164/info" class="education__link">HTML&CSS</a></li>
+                        <li><a href="https://stepik.org/course/13929/info" class="education__link">Javascript:Hexlet</a></li>
+                        <li><a href="https://stepik.org/course/58852/info" class="education__link">Python</a></li>
                     </ul>
                 </section>
                 <section class="section" id="languages">
@@ -109,12 +103,16 @@
         </main>
         <footer class="footer">
             <div class="container footer-container">
-              <div>© 2022 <a href="https://rs.school/js/" target="_blank" class="rss">RS</a></div>
-                  <a target="_blank" href="https://github.com/Izvra4ok" class="github nav-link">Izvra4ok</a>
+              <div><a href="https://rs.school/js/" target="_blank" class="rss"></a></div>
+              <div>© 2022  <a target="_blank" href="https://github.com/Izvra4ok" class="github nav-link">Izvra4ok</a></div>
             </div>
           </footer>
     </div>
 
+        <!-- Подключаем jQuery -->
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <!-- Подключаем файл js-скриптов -->
+        <script src=""></script>
 </body>
 
 </html>
