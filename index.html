@@ -12,6 +12,7 @@
 <body>
     <div class="wraper">
         <header class="header__top">
+            <div class="header__burger"><span></span></div>
             <div class="container header__container">
                 <nav class="nav__header">
                     <ul class="nav__list">
@@ -38,21 +39,22 @@
                     <h2 class="section__title">Contacts</h2>
                     <ul class="section__list">
                         <li class="section__link">Discord: Izvra4ok</li>
-                        <li class="section__link">GitHub: <a target="_blank" id="contacts__link" href="https://github.com/Izvra4ok">Izvra4ok</a></li>
-                        <li class="section__link">E-mail: <a target="_blank" id="contacts__link" href="mailto:barzakouski.sergey@gmail.com">barzakouski.sergey@gmail.com</a></li>
-                        <li class="section__link">Tel.:<a id="contacts__link" href="tel:+375298877721"> +375298877721</a></a></li>
-                        <li class="section__link">Instagram: <a target="_blank" id="contacts__link" href="https://www.instagram.com/barzakouski.sergey/">barzakouski.sergey</a></li>
-                        <li class="section__link">VKontakte: <a target="_blank" id="contacts__link" href="https://vk.com/s.barzakovski">s.barzakovski</a></li>
+                        <li class="section__link">GitHub: <a target="_blank" class="contacts__link" href="https://github.com/Izvra4ok">Izvra4ok</a></li>
+                        <li class="section__link">E-mail: <a target="_blank" class="contacts__link" href="mailto:barzakouski.sergey@gmail.com">barzakouski.sergey@gmail.com</a></li>
+                        <li class="section__link">Tel.:<a class="contacts__link" href="tel:+375112233344"> +375-11-22-333-44</a></li>
+                        <li class="section__link">Instagram: <a target="_blank" class="contacts__link" href="https://www.instagram.com/barzakouski.sergey/">barzakouski.sergey</a></li>
+                        <li class="section__link">VKontakte: <a target="_blank" class="contacts__link" href="https://vk.com/s.barzakovski">s.barzakovski</a></li>
 
                     </ul>
                 </section>
-                <section class="section" id="About">
-                    <h2 class="section__title">About myself</h2>
+                <section class="section" id="about">
+                    <h2 class="section__title">About me</h2>
                     <p class="about__text">My name is Sergey. I'm 31 and I live in Grodno, Republic of Belarus. I'm married and I have
                         a beautiful daughter. Every day I do a lot of phyzical excercises: pussh-up,pull-up,jogging. I
                         spend my free time for the computer or I study English twice of week with my teacher. I want to learn Front-end Development and work as
                         Developer.</p>
-                    <ul class="about__list">My core strengths:
+                        <p class="about__text">My core strengths:</p>
+                    <ul class="about__list">
                         <li>Quick learner</li>
                         <li>Diligence</li>
                         <li>Sociability</li>
@@ -61,7 +63,7 @@
                 </section>
                 <section class="section" id="skill">
                     <h2 class="section__title">My skills</h2>
-                    <ul class="skill_list">
+                    <ul class="skill__list">
                         <li>JavaScript (basic)</li>
                         <li>Python (basic)</li>
                         <li>HTML</li>
@@ -85,7 +87,8 @@ if (begin === end){
                 <section class="section" id="education">
                     <h2 class="section__title">Education&Experience</h2>
                     <p class="education__text">Work experience - nothing yet...</p>
-                    <ul class="education__list"><span>I learned some courses:</span>
+                    <p class="education__text">I learned some courses:</p>
+                    <ul class="education__list">
                         <li><a href="https://stepik.org/course/2223/info" class="education__link">Javascript</a></li>
                         <li><a href="https://stepik.org/course/52164/info" class="education__link">HTML&CSS</a></li>
                         <li><a href="https://stepik.org/course/13929/info" class="education__link">Javascript:Hexlet</a></li>
@@ -111,7 +114,7 @@ if (begin === end){
         <!-- Подключаем jQuery -->
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
         <!-- Подключаем файл js-скриптов -->
-        <script src=""></script>
+        <script src="./js/main.js"></script>
 </body>
 
 </html>

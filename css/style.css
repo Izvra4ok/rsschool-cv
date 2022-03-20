@@ -85,9 +85,6 @@ body{
   min-height: 100vh;
   min-width: 320px;
 }
-.wraper {
-  /* background-color: rgba(185, 182, 182, 0.411); */
-}
 .header__top {
   background-color: rgb(148, 148, 245)
 }
@@ -112,6 +109,7 @@ body{
   line-height: 50px;
 }
 .nav__link {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   position: relative;
   padding: 0 12px;
   text-decoration: none;
@@ -160,6 +158,9 @@ body{
   width: 50%;
   padding: 20px 0px 40px 20px;
   border-top:3px outset rgb(148, 148, 245)
+}
+.section__list{
+  margin:10px 10px 0px 10px;
 }
 .section__profile {
   border: none;
@@ -212,17 +213,17 @@ body{
   font-weight: 600;
   text-transform: none;
 }
-#contacts__link{
+.contacts__link{
   position: relative;
 }
-#contacts__link:link,
-#contacts__link:visited{
+.contacts__link:link,
+.contacts__link:visited{
   color:blue;
 }
-#contacts__link:hover{
+.contacts__link:hover{
   color: grey;
 }
-#contacts__link::after{
+.contacts__link::after{
   position: absolute;
   content: "";
   bottom: -1px;
@@ -232,7 +233,7 @@ body{
   transition: 1s;
   opacity: 0;
 }
-#contacts__link:hover::after{
+.contacts__link:hover::after{
   opacity: 1;
   animation-name: border__link;
   animation-duration: 1.5s;
@@ -267,9 +268,11 @@ body{
   padding: 0px 15px 0px 10px;
   margin: 0 12px 0px 0px;
 }
-
-.skill_list li {
-  margin:10px 0px 20px 20px
+.skill__list{
+  margin:10px 10px 0px 10px;
+}
+.skill__list li {
+  margin:20px 0px 20px 20px
 }
 .skill_list li::before{
   background:url("//izvra4ok.github.io/rsschool-cv/image/icons/skill.png") center no-repeat;
@@ -355,7 +358,7 @@ body{
   margin: 0 12px 0px 0px;
 }
 .footer {
-  border-top:3px outset rgb(148, 148, 245);
+  /* border-top:3px outset rgb(148, 148, 245); */
   padding: 20px;  
 }
 
@@ -364,6 +367,8 @@ body{
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  border-top:3px outset rgb(148, 148, 245);
+  padding:20px 0px 0px 0px;
 }
 
 .github {
@@ -380,15 +385,12 @@ body{
     font-size: 16px;
     overflow-x: hidden;
   }
-  .nav__header{
-    display: none;
-  }
   .section{
     flex: 0 0 100%;
     flex-wrap:wrap;
   }
   .section__title{
-    font-size: 24px;
+    font-size: 26px;
   }
   .section__profile{
     flex-direction: column;
@@ -409,5 +411,123 @@ body{
     font-family: monospace;
     white-space:pre-wrap;
   }
-
 }
+
+
+/* menu burger */
+.headr__burger{
+  transition: all 0.3s ease 0s;
+  display: none;
+}
+@media (max-width:767px){
+  .nav__header{
+    display: none;
+  }
+  .nav__link::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+    opacity: 0;
+    transition: .5s;
+  }
+  @keyframes border__bottom {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .header__top{
+    transition: all 0.3s ease 0s;
+    height: 70px;
+    max-height: 100%;
+   }
+  .header__top.active{
+    transition: all 0.3s ease 0s;
+    height: 220px;
+    max-height: 100%;
+  }
+  .nav__header.active{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  .nav__list{
+  transition: all 0.3s ease 0s;
+   display: block;
+
+  }
+  .nav__link{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 4px;
+    word-spacing: 2px;
+  }
+  .nav__list__item{
+    width: 100%;
+    height: 20px;
+    padding: 5px;
+    padding: 0;
+    margin: 0px 20px 10px 20px;
+  }
+  .nav__list{
+    margin: -10px 10px 0px 0px;
+  }
+  .header__burger{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    width: 50px;
+    height: 20px;
+    left:5%;
+    top: 35%;
+  }
+  .header__burger span{
+    position: absolute;
+    content: "";
+    background-color: white;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top:9px;
+  }
+  .header__burger::before,
+  .header__burger::after{
+    content: "";
+    position:absolute;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before{
+    top:0;
+  }
+  .header__burger::after{
+    bottom: 0;
+  }
+  .header__burger.active::before{
+    transform: rotate(-45deg);
+    top: 9px;
+
+  }
+  .header__burger.active::after{
+    transform: rotate(45deg);
+
+    bottom:9px;
+  }
+  .header__burger.active span{
+    transform: scale(0);
+    display: none;
+    transition: all 0.3s ease 0s;
+  }
+}
+/* mebu burrger */
