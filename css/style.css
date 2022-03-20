@@ -77,8 +77,8 @@ html{
   scroll-behavior: smooth;
 }
 
-.body{
-  overflow: hidden;
+body{
+  background-color: rgba(185, 182, 182, 0.411);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -86,7 +86,7 @@ html{
   min-width: 320px;
 }
 .wraper {
-  background-color: rgba(185, 182, 182, 0.411);
+  /* background-color: rgba(185, 182, 182, 0.411); */
 }
 .header__top {
   background-color: rgb(148, 148, 245)
@@ -344,7 +344,7 @@ html{
   margin:10px 0px 20px 20px
 }
 .languages__list li::before{
-  background:url("/izva4ok.github.io/rsschool-cv/image/") center no-repeat;
+  background:url("//izvra4ok.github.io/rsschool-cv/image/icons/language.png") center no-repeat;
   content: "";
   position: relative;
   top:15px;
@@ -371,15 +371,13 @@ html{
   line-height: 45px;
 }
 
-.rss {
-  width: 121px;
-  height: 45px;
-  background-image: url("//izvra4ok.github.io/rsschool-cv/image/icons/rs_school_js.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
+.rss img {
+  width: 200px;
+
 }
 @media (max-width:768px){
   body{
+    font-size: 16px;
     overflow-x: hidden;
   }
   .nav__header{
@@ -387,14 +385,29 @@ html{
   }
   .section{
     flex: 0 0 100%;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
+  }
+  .section__title{
+    font-size: 24px;
   }
   .section__profile{
     flex-direction: column;
     align-items: center;
   }
+  .section__top__title{
+    font-size: 24px;
+  }
+  .section__subtitle{
+    font-size: 16px;
+  }
   .footer-container{
     flex-direction: column;
     align-items: center;
   }
+  .pre{
+    display: block;
+    font-family: monospace;
+    white-space:pre-wrap;
+  }
+
 }
