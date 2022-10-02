@@ -122,7 +122,7 @@ body{
   left: 12px;
   bottom: -5px;
   width: calc(100% - 25px);
-  height: 2px;
+  height: 1px;
   background-color: black;
   opacity: 0;
   transition: .5s;
@@ -228,7 +228,7 @@ body{
   content: "";
   bottom: -1px;
   left:0px; 
-  height: 2px;
+  height: 1px;
   background-color: black;
   transition: 1s;
   opacity: 0;
