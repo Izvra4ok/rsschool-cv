@@ -257,7 +257,7 @@ body{
   margin: 20px 0px 20px 20px
 }
 .about__list li::before {
-  background:url("//izvra4ok.github.io/rsschool-cv/image/icons/about.png") center no-repeat;
+  background:url("/image/icons/skill.png") center no-repeat;
   content: "";
   width: 20px;
   height: 25px;
